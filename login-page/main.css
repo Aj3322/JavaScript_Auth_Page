@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --bg-color: #171e2c;
+  --second-bg-color: #232c3e;
+  --text-color: #fff;
+  --main-color: #81ABFA;
+}
+/* Set the base font size and prevent horizontal overflow */
+html {
+    font-size: 62.5%; /* This makes 1rem equal to 10px */
+    overflow-x: hidden;
+  }
+  
+  /* Apply styles to the body */
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  color: var(--main-color);
+  letter-spacing: 0.1em;
+}
+
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+}
+
+p span {
+  background:var(--bg-color);
+  padding:0 10px;
+}
+
+
+input, button {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+}
+
+.login-container {
+  background-color: white;
+  padding: 7%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* horizontal align */
+  width: 40vw;
+  margin-left: 30vw;
+  /* vertical align */
+  height: 70vh;
+  margin-top: 15vh;
+}
+
+#submit, #create-acct-btn {
+  display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: 0.5s ease; 
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+#sign-up {
+  border: none;
+}
+
+#create-acct {
+  display: none;
+}
+
+#return-btn {
+  background: none;
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+}
+.login-container h2 {
+  margin-bottom: 3rem;
+}
+
+.login-container {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: var(--bg-color);
+}
+
+
